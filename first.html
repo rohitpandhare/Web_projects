@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Challenge 1</title>
+</head>
+<body>
+    <!-- <a href="https://www.w3schools.com/bootstrap/trybs_theme_me_complete.htm" target="_blank">Challenge 1</a> -->
+    <nav class="myNav">
+        <div id="me">Me</div>
+        <ul class="navDiv">
+
+            <input type="checkbox" name="" id="my_check">
+            <label for="my_check" id="ham" onclick="toggleMenu()">&#9776;</label>
+
+            <div class="menu">
+                <li><a href="#block1">WHO</a></li>
+                <li><a href="#block2">WHAT</a></li>   
+                <li><a href="#block3">WHERE</a></li>
+            </div>
+        </ul>
+     </nav>
+
+
+     <div id="block1">
+            <p>Who Am I?</p>
+            <img src="img/bird.jpg" alt="A cute eagle">
+            <p>I'm an Adventurer</p>
+    </div>
+
+     <div id="block2">
+        <p id="what">What Am I?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis veritatis, explicabo inventore distinctio quaerat optio est facere asperiores alias quisquam, et officia, fugit fugiat eum consequuntur architecto repellendus?</p>
+        <button>
+            <span class="material-symbols-outlined">search</span> Search
+        </button>
+     </div>
+     
+     <div id="block3">
+        <p>Where To Find Me?</p>
+        <br>
+        <div class="lastB">
+            <div class="bird">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere quis repellendus consequuntur ipsam et?</p>
+                <img  class="birdify" src="img/birds1.jpg" alt="bird1">
+            </div>
+            <div class="bird">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere quis repellendus consequuntur ipsam et?</p>
+                <img  class="birdify" src="img/birds2.jpg" alt="bird2">
+            </div>
+            <div class="bird">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere quis repellendus consequuntur ipsam et?</p>
+                <img class="birdify" src="img/birds3.jpg" alt="bird3">
+            </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>
+        Website Made By <a href="https://linkedin.com/rohitpandhare" target="_blank">@rohitpandhare</a>
+        </p>
+    </footer>
+</body>
+<script>
+    let myMenu = document.getElementsByClassName('menu');
+myMenu.style.maxHeight = '0px';
+
+function toggleMenu(){
+  if(myMenu.style.maxHeight == '0px'){
+      myMenu.style.maxHeight = '400px';
+  }else{
+      myMenu.style.maxHeight = '0px';
+  }
+}
+</script>
+</html>

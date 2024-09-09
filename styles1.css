@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: "Montserrat", "sans-serif";
+background-color: #f8f8f8
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Navbar styling */
+.myNav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   padding: 20px;
+}
+
+.navDiv a,#me{
+    color: grey;
+}
+
+#me{
+    font-size: 1.5rem;
+}
+
+/* navbar menu */
+.menu{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.menu li:hover{
+    background-color: lightgrey;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li{
+    padding:5px 14px;
+}
+
+/* checkbox */
+input[type="checkbox"]{
+    display: none;
+}
+
+#my_check{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+} 
+#ham{
+    display: none;
+}
+
+#block1{
+    background-color: #1abc9c;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    height: 600px;
+    padding-top: 100px;
+}
+
+#block1 > img{
+    border-radius: 50%;
+}
+
+
+#block2{
+    background-color: #474e5d;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 250px;
+    padding-top: 100px;
+}
+#block2 > #what{
+    font-size: 24px;
+}
+
+#block2 > button{
+    border-radius: 8px;
+    font-size: large;
+    font-weight: normal;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+#block3{
+    text-align: center;
+    width: 100%;
+    color: grey;
+    padding-top: 20px;
+    font-size: large;
+    height: 100%;
+    margin: 20px;
+    ;
+}
+#block3 > p{
+    padding-top: 32px;
+    font-size: 24px;
+}
+
+#block3 > .lastB{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+
+.birdify{
+    width: 450px;
+    padding: 10px;
+}
+footer{
+    background-color: #2F2F2F;
+    color: white;
+    text-align: center;
+    height: 120px;
+    padding-top: 70px;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+/* media queries */
+
+nav > div > button{
+    display: none;
+}
+
+    
+@media (max-width: 720px){
+    .menu {
+    display:none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 16px 0;
+   
+}
+
+.menu li:hover {
+    display: inline-block;
+}
+#ham{
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu li + li {
+    margin-top: 12px;
+}
+
+input[type=checkbox]:checked ~ .menu {
+    display: block;
+    background-color: #f8f8f8;
+}
+
+#my_check{
+    display: none;
+}
+
+#block1{
+    height: 400px;
+    padding-top: 50px;
+}
+
+#block1 >img{
+    width: 200px;
+    height: 200px;
+}
+
+#block1 p{
+    font-size: 20px;    
+}
+
+#block2{
+    height: 200px;
+    padding-top: 50px;
+}
+
+#block2 > #what{
+    font-size: 20px;
+}
+#block2 > button{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+}
+
+#block2 > p{
+    font-size: 12px;
+}
+
+#block3{
+    padding-top: 20px;
+    font-size: 20px;
+    height: 100%;
+    margin: 20px;
+}
+.bird > p{
+    font-size: 12px;
+}
+
+#block3 > .lastB{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.birdify{
+    width: 300px;
+    padding: 10px;
+}
+
+footer{
+    height: 100px;
+    padding-top: 50px;
+}
+
+}
